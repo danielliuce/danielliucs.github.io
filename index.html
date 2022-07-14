@@ -1,82 +1,184 @@
 <!DOCTYPE html>
-
-<!-- https://validator.w3.org/nu/#file -->
-<!-- TO VALIDATE FILES!-->
-
-<html lang="en">
+<html>
   <head>
+    <title>Daniel Li Liu's Personal Website</title>
     <meta charset="UTF-8" />
-    <meta name="author" content="Daniel Liu" />
-    <meta name="description" content="Learning pg" />
-    <title>Early Stages of My First Webpage</title>
-    <link rel="icon" href="img.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--<link rel="stylesheet" href="main.css">-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
+  <body class="w3-light-grey">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width: 2000px">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-quarter w3-light-grey">
+          <h1>Daniel Li Liu<br /></h1>
+          <div class="w3-text-grey">
+            <div class="w3-display-container">
+              <img src="headshot.jpg" style="width: 60%" alt="Avatar" />
+              <div class="w3-display-bottomleft w3-container w3-text-black">
+              </div>
+            </div>
+            <div class="w3-container">
+              <p class="w3-text-black">
+                <i
+                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i>daniell.liu@mail.utoronto.ca
+              </p>
+              <p class="w3-text-black">
+                <i
+                  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >Mississauga, Canada
+              </p>
+              <hr />
+            </div>
+          </div>
+          <br />
+          <!-- End Left Column -->
+        </div>
+        <!-- Right Column -->
+        <div class="w3-twothird">
 
-  <body>
-    <h1>Hello World!</h1>
-    <!--Title-->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-black w3-padding-16"> 
+            <i class="fa fa-clock-o w3-xxlarge fa-fw w3-margin-right" style="color:#03b7b7"></i>What I'm currently doing
+            </h2>
+            <p>
+              <li style="font-size:18px">I am working underneath the iQua Research Group at the University of Toronto. 
+              I have worked extensively the continual_RL branch in the pinned federated learning framework <i>Plato</i> in my github repository
+              <li style="font-size:18px">I am also working on this personal website!</li>
+            </p>
+          </div>
 
-    <hr />
-    <h2>I'm ready to learn HTML</h2>
-    <!--Subtitle-->
-    <p>This is my first web page.</p>
-    <hr />
-    
-    <h3>Some Ideas I would like to put on this website</h3>
-    <p>
-      <ul> 
-      <li> Personal Calender </li>
-      <li> &nbsp; &nbsp; &nbsp; ... A calender that tracks tasks I have to do per
-      week, one I can enter tasks/things to do, this would require a database.. would probably be time consuming  </li>
-      <li>Maybe a section of the website dedicated to talk about courses i've taken and what i've thought about them</li>
-      <li>A portfolio, similar to what is seen on github  </li>
-      <li> &nbsp; &nbsp; &nbsp; ... This will keep track of projects I have worked on
-      with source code and maybe demos of it working? </li>
-      <li> An about me section </li>
-      <li> &nbsp; &nbsp; &nbsp; ... This will probably be about me and stuff &nbsp; </li>
-      <li>&nbsp; &nbsp; &nbsp ... Maybe add what I'm currently doing and what I want to do
-      in the future</li>
-      <li>An integration of react maybe after I integrate javascript and more css</li></ul>
-    </p>
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-black w3-padding-16"> 
+            <i class="fa fa-edit" style="font-size:48px;color:#03b7b7"></i>
+              Coming Updates to this Website
+            </h2>
+            <ul> 
+              <li style="font-size:30px"> FIX THE SITE'S WEBSITE INDENDATION </li>
+              <li> Use Custom CSS stylesheet </li>
+              <li> Personal Calender </li>
+              <li> &nbsp; &nbsp; &nbsp; ... A calender that tracks tasks I have to do per
+              week, one I can enter tasks/things to do, this would require a database.. would probably be time consuming, to be determined </li>
+              <li>Maybe a section of the website dedicated to talk about courses i've taken and what i've thought about them</li>
+              <li>A portfolio, similar to what is seen on github  </li>
+              <li> &nbsp; &nbsp; &nbsp; ... This will keep track of projects I have worked on
+              with source code and maybe demos of it working? </li>
+              <li> An about me section </li>
+              <li> &nbsp; &nbsp; &nbsp; ... This will probably be about me and stuff &nbsp; </li>
+              <li>&nbsp; &nbsp; &nbsp ... Maybe add what I'm currently doing and what I want to do
+              in the future</li>
+              <li>An integration of react maybe after I integrate javascript and more css</li></ul>
+          </div>
+        
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-black w3-padding-16">
+              <i
+                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge" style="font-size:48px;color:#03b7b7"
+              ></i
+              >Education
+            </h2>
+            <div class="w3-container">
+              <h5 class="w3-text-black"><b>University of Toronto | Computer Engineering</b></h5>
+              <h6 class="w3-text-black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i> <i> September 2020 - April 2025</i>
+                <li><b>Bachelor Of Applied Science</b></li>
+                <li><b>3.84/4.00 cGPA</b></li>
+                <li>Artificial Intelligence Minor</li>
+                <li>Business Certificate</li>
+              </h6>
+              <hr />
+            </div>
+          </div>
 
-    <hr />
-    
-    <h4>Motivation on why to do this</h4>
-    <p>
-      <ul>
-      <li> You spent 30 dollars on the yearly domain, make good use of it or else you
-      just wasted a lot of money </li>
-      <li> You want to go into your PEY job with frontend skills and not be a one
-      trick pansy with only backend skills </li>
-      <li> You have so much time in the summer that you won't have in the semester </li> </ul>
-    </p>
-    <!-- <p>
-      I wake up in the morning: <br />
-      &nbsp; &nbsp; &nbsp; ...I go on my phone <br />
-      &nbsp; &nbsp; &nbsp; ...I start extend plato for 8 hours <br />
-      &nbsp; &nbsp; &nbsp; ...I use ressources from
-      <abbr title="Mozilla Developer Network"> iQua </abbr> to extend plato
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-black w3-padding-16">
+              <i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="font-size:48px;color:#03b7b7"
+              ></i>Work Experience
+            </h2>
+            <div class="w3-container">
+              <h5 class="w3-text-black">
+                <b>Front End Developer</b> | UoftHacks
+              </h5>
+              <h6 class="w3-text-teal">
+                <h6 class="w3-text-black">
+                  <i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2022
+                  - <b>Current</b>
+                </h6>
+                <!--
+                  change this to your own later<span class="w3-tag w3-black w3-round-xlarge">Current</span>-->
+              </h6>
+              <p><li>Developing the frontend of the hackathon website</li></p>
+              <hr />
+            </div>
+
+            <div class="w3-container">
+              <h5 class="w3-text-black">
+                <strong> Machine Learning Researcher </strong> | iQua Research
+                Group
+              </h5>
+              <h6 class="w3-text-black">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 -
+                <b>Current</b>
+              </h6>
+              <p>
+                <li>
+                  Conducted experiments using reinforcement learning algorithms
+                  such as TD3 for machine learning models
+                </li>
+                <li>
+                  Explored design space for when models should forget old data
+                  based on interference
+                </li>
+                <li>
+                  Implemented reinforcement learning for clients in the
+                  federated learning framework <i><b>Plato</b></i>
+                  <br>
+                  <a href=https://github.com/TL-System/plato/tree/continual_RL> <i>Project Link</i></a>
+                </li>
+              </p>
+            </div>
+          </div>
+      
+
+          <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
       <br />
-      &nbsp; &nbsp; &nbsp; ... After work I see if I am in the mood for some
-      leetcode, if not I will try to learn some HTML or go on my phone
-      <br />&nbsp; &nbsp; &nbsp; ... At night I hit the gym before I go to bed
-    </p>
+      &lt;&lt;&lt;&copy; Daniel Liu &gt; &gt; &gt;
+    </footer>
 
-    <hr />
-
-    <h2>I am also planning a Vacation</h2>
-    <p>I've been working hard and <em> want a getAway</em></p>
-    <p>Living in sauga, want to visit lake ontario</p>
-
-    <h3>Places I'd like to visit:</h3>
-    <p>Lake Ontario</p>
-    <address>Ontario, Mississauga Near Port Credit</address>
-
-    <h3>Places I'd like to avoid</h3>
-    <p>no cold places! <strong>No way!</strong></p>
-     -->
-    <hr />
-    &lt;&lt;&lt;&copy; Daniel Liu &gt; &gt; &gt;
   </body>
 </html>
