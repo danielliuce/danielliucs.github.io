@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daniel Li Liu's Personal Website</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Daniel Li Liu" />
+    <meta name="description" content="Personal Website for Daniel Li Liu" />
+    <link rel="stylesheet" href="main.css">
+    <script src="myscript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans";
+        }
+    </style>
+</head>
+
+<body class="light-grey">
+    <header>
+        <nav>
+            <ul>
+                <button class="page-button" id="Home" onclick="changePage(id)"> Home</button>
+                <button class="page-button" id="Current" onclick="changePage(id)">Current</button>
+                <button class="page-button" id="Experience" onclick="changePage(id)">Experience</button>
+                <button class="page-button" id="Projects" onclick="changePage(id)">Projects</button>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Page Container -->
+    <div class="page">
+        <!-- The Grid -->
+        <div class="row-padding">
+            <!-- Left Column -->
+            <!-- Right Column -->
+
+            <div class="container card margin-bottom white">
+                <h2 class="text-black">
+                    <i class="fa-solid fa-clock xxlarge fa-fw teal-color"></i>What I'm currently doing
+                </h2>
+                <p>
+                    <li style="font-size:18px">I am working underneath the iQua Research Group at the University of
+                        Toronto.
+                        I have worked extensively on the continual_RL branch in the pinned federated learning
+                        framework <i>Plato</i> in my github repository
+                    <li style="font-size:18px">I am also actively working for UoftHacks as a FrontEnd Engineer</li>
+                    <li style="font-size:18px">I am also working on this personal website! I am learning HTML/CSS/JS
+                        through working on this website. This is my only experience with web development </li>
+                </p>
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+    <footer class="footer-other">
+        &lt; &lt; &lt; &copy; Daniel Liu &gt; &gt; &gt;
+    </footer>
+
+</body>
+
+</html>

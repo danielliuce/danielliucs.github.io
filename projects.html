@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daniel Li Liu's Personal Website</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Daniel Li Liu" />
+    <meta name="description" content="Personal Website for Daniel Li Liu" />
+    <link rel="stylesheet" href="main.css">
+    <script src="myscript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans";
+        }
+    </style>
+</head>
+
+<body class="light-grey">
+    <header>
+        <nav>
+            <ul>
+                <button class="page-button" id="Home" onclick="changePage(id)"> Home</button>
+                <button class="page-button" id="Current" onclick="changePage(id)">Current</button>
+                <button class="page-button" id="Experience" onclick="changePage(id)">Experience</button>
+                <button class="page-button" id="Projects" onclick="changePage(id)">Projects</button>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Page Container -->
+    <div class="page">
+        <!-- The Grid -->
+        <div class="row-padding">
+
+            <!-- Right Column -->
+
+            <div class="container card white margin-bottom">
+                <h2 class="text-black less-thin-underline">
+                    <i class="fa-solid fa-calendar-days teal-color"></i>
+                    &nbsp; Some projects I've worked on
+                </h2>
+
+                <h3>
+                    <b style="color:#094ae2"> Extension of Federated Learning Framework <a
+                            href=https://github.com/TL-System/plato/tree/continual_RL> Plato</a></b>
+                    <br>
+                    <i class="fa-solid fa-calendar-days fa-fw margin-top large"></i> <span style="font-size:70%">May
+                        2022 -
+                        <b>Current</b></span>
+
+                    <p style="font-size:65%">I helped extend this framework by supporting reinforcement learning
+                        training on
+                        clients. This extension allowed popular federated learning algorithms such as FedAvg and FedADP
+                        aggregated clients that used
+                        reinforcement learning. </p>
+                    <p style="font-size:65%">
+                        I worked on
+                        two reinforcement learning algorithms (<a
+                            href="https://github.com/TL-System/plato/tree/continual_RL/examples/park_env"><b>A2C</b></a>
+                        & <a
+                            href="https://github.com/TL-System/plato/tree/continual_RL/examples/td3_learning"><b>TD3</b></a>
+                        )
+                        for the clients to use and then used federated averaging to aggregate the clients
+                        to the server. I also helped make custom actor and critic models used in both A2C & TD3 as well
+                        as a
+                        custom algorithm for the server to
+                        communication with the clients</p>
+                    <p style="font-size:65%">Curriculum learning was then implemented with these algorithms and then
+                        experiments
+                        were ran on the adaptive bit rate environment found in <a
+                            href=https://github.com/park-project/park>
+                            park</a>
+                        with three tasks and three seeds. I then developed code to combine dataframes, take the averages
+                        and
+                        cumulative sum and plotted them.
+                        Comparing curriculum learning showed better results than the classic federated averaging
+                        algorithm</p>
+
+                    <p style="font-size: 65%"><b>This work resulted in a paper submitted to the INFOCOM 2023
+                            Conference</b></p>
+                </h3>
+                <hr>
+
+                <h3>
+                    <b style="color:#094ae2"> Mapping Application similar to Google Maps</b>
+                    <br>
+                    <i class="fa-solid fa-calendar-days fa-fw w3-margin-top w3-large"></i> <span
+                        style="font-size:70%">Jan 2022 -
+                        Apr 2022</span>
+                    <br>
+                </h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5GGsZbrTWwo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <li style="font-size:large">A more detailed reflection can be found <a
+                        href=https://github.com/danielliucs/MapperPublic> here</a> </li>
+
+                <hr>
+
+                <h3>
+                    <b style="color:#094ae2"> Processor Design Project</b>
+                    <br>
+                    <i class="fa fa-calendar fa-fw w3-margin-top w3-large"></i> <span style="font-size:70%">Apr
+                        2022</span>
+                    <p style="font-size: 65%"> This was a project I worked on with a good friend of mine Dante Crescenzi
+                        (insert
+                        his website here)
+                        This processor was 16 bits with 8 total registers and implemented using Verilog. I implemented
+                        assembly
+                        language instructions such as
+                        <b>mov, movt, add, sub, ldr, str, and, b</b> and things such as flag checking.
+                        Dante then extended the processor to support instructions such as <b>push, pop, bl, cmp, lsl,
+                            lsr, asr,
+                            ror</b>.
+                    </p>
+                    <p style="font-size: 65%">Overall, this project taught me a lot about how a processor works and the
+                        verilog
+                        behind it. Concepts such as
+                        FSM timing diagrams were used to implement instructions on the correct clock cycle along with
+                        ModelSim
+                        debugging were extensively practiced.
+                        <br>
+                        Due to the restrictions of academic integrity set in place by my University, I am unable to
+                        share the
+                        project folder publicly on this website but they
+                        are available upon demand.
+                    </p>
+                </h3>
+
+                <hr>
+                <h3>
+                    <b style="color:#094ae2"> <a href="https://devpost.com/software/gotime-jbksxl">GoTime</a> - NewHacks
+                        Hackathon Project, <i>4th Place Winner</i></b>
+                    <br>
+                    <i class="fa-solid fa-calendar-days fa-fw w3-margin-top w3-large"></i> <span
+                        style="font-size:70%">November 7th
+                        2021</span>
+
+                    <p style="font-size:65%">This was a 24 hour Hackathon. It's where I first learned about Dijkstras
+                        algorithm
+                        and how it finds us the shortest
+                        possible path inside a graph. I mainly worked on the algorithm and it was then integrated with
+                        the
+                        frontend to launch
+                        a web app.The main goal of this web app was to allow University of Toronto students to have a
+                        more
+                        <i><b>efficient schedule</b></i> than what is
+                        currently in place.
+
+                    </p>
+                    <p style="font-size:65%">
+                        Currently, an example for students with three lectures will have
+                        students sometimes start at Bahen, walk up to Sidney Smith, and walk back to Bahen.
+                        Making students have two classes in Bahen and then their third and last one at Sidney Smith
+                        would be more
+                        efficient.
+                        This is what our web app aimed to do, minimize walking by rearranging schedules more
+                        efficiently. More
+                        details can be found
+                        at the projects link.
+                    </p>
+
+                    <p style="font-size:65%">
+                        Overall, the hackathon was lots of work as I was just at my computer for almost 24 hours
+                        but I learned a lot and it was fun.
+                    </p>
+                </h3>
+            </div>
+            <!-- End Right Column -->
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+    <footer class="footer">
+        &lt; &lt; &lt; &copy; Daniel Liu &gt; &gt; &gt;
+    </footer>
+
+</body>
+
+</html>

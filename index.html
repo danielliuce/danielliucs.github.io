@@ -1,265 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Daniel Li Liu's Personal Website</title>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Daniel Li Liu" />
-    <meta name="description" content="Personal Website for Daniel Li Liu" />
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      html,
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Open Sans";
-      }
-    </style>
-  </head>
-  <body class="light-grey">
-    <!-- Page Container -->
-    <div class="page">
-      <!-- The Grid -->
-      <div class="row-padding">
-        <!-- Left Column -->
-        <div class="left-column light-grey">
-          <h1>Daniel Li Liu<br /></h1>
-          <div class="text-grey">
-            <div class="display-container">
-              <img src="headshot.jpg" class="avatar" alt="Avatar" />
-              <div class="display-bottomleft container text-black">
-              </div>
-            </div>
-            <div class="container">
-              
-              <p class="text-black">
-                <a href= https://github.com/danielliucs> <i class="fa fa-github xlarge social-icon"> </i> </a>
-              </p>
 
-              <p class="text-black">
-               <a href=https://www.linkedin.com/in/daniel-liu-1544321ab/ > <i class="fa fa-linkedin-square xlarge social-icon"></i> </a> 
-              </p>
+<head>
+  <title>Daniel Li Liu's Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Daniel Li Liu" />
+  <meta name="description" content="Personal Website for Daniel Li Liu" />
+  <link rel="stylesheet" href="main.css">
+  <script src="myscript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Open Sans";
+    }
+  </style>
+</head>
 
-              <p class="text-black">
-                <i
-                class="fa fa-envelope large text-teal"
-                ></i>daniell.liu@mail.utoronto.ca
-              </p>
-              
-              <p class="text-black">
-                <i
-                  class="fa fa-home xlarge text-teal" 
-                ></i
-                >Mississauga, Canada
-              </p>
+<body class="light-grey">
+  <header>
+    <nav>
+      <ul>
+        <button class="page-button" id="Home" onclick="changePage(id)"> Home</button>
+        <button class="page-button" id="Current" onclick="changePage(id)">Current</button>
+        <button class="page-button" id="Experience" onclick="changePage(id)">Experience</button>
+        <button class="page-button" id="Projects" onclick="changePage(id)">Projects</button>
+      </ul>
+    </nav>
 
+  </header>
+  <!-- Page Container -->
+  <div class="page">
+    <!-- The Grid -->
+    <div class="row-padding">
+      <!-- Left Column -->
+      <div class="left-column light-grey">
+        <h1>Daniel Li Liu<br /></h1>
+        <div class="text-grey">
+          <div class="display-container">
+            <img src="headshot.jpg" class="avatar" alt="Avatar" />
+            <div class="display-bottomleft container text-black">
             </div>
           </div>
-          <!-- End Left Column -->
-        </div>
-        <!-- Right Column -->
-        <div class="right-column">
+          <div class="container">
 
-          <div class="container card margin-bottom white">
-            <h2 class="text-black"> 
-            <i class="fa fa-clock-o xxlarge fa-fw margin-right teal-color" ></i>What I'm currently doing
-            </h2>
-            <p>
-              <li style="font-size:18px">I am working underneath the iQua Research Group at the University of Toronto. 
-              I have worked extensively on the continual_RL branch in the pinned federated learning framework <i>Plato</i> in my github repository
-              <li style="font-size:18px">I am also working on this personal website! I am learning HTML/CSS/JS through working on this website. This is my only experience with web developement</li>
+            <p class="text-black">
+              <a href=https://github.com/danielliucs> <i class="fa-brands fa-github large social-icon"> </i> </a>
             </p>
-          </div>
 
-          <div class="container card white margin-bottom">
-            <h2 class="text-black"> 
-            <i class="fa fa-edit fa-fw xxlarge teal-color" ></i>
-             Coming Updates to this Website
-            </h2>
-            <ul> 
-              <li style="font-size:30px"> Make different tabs for different things </li>
-              <li> Personal Calender </li>
-              <li> &nbsp; &nbsp; &nbsp; ... A calender that tracks tasks I have to do per
-              week, one I can enter tasks/things to do, this would require a database.. would probably be time consuming, to be determined </li>
-              <li>Maybe a section of the website dedicated to talk about courses i've taken and what i've thought about them</li>
-              <li>A portfolio, similar to what is seen on github  </li>
-              <li> &nbsp; &nbsp; &nbsp; ... This will keep track of projects I have worked on
-              with source code and maybe demos of it working? </li>
-              <li> An about me section </li>
-              <li> &nbsp; &nbsp; &nbsp; ... This will probably be about me and stuff &nbsp; </li>
-              <li>&nbsp; &nbsp; &nbsp ... Maybe add what I'm currently doing and what I want to do
-              in the future</li>
-              <li>An integration of react maybe after I integrate javascript and more css</li></ul>
-          </div>
-        
-          <div class="container card white margin-bottom">
-            <h2 class="text-black">
-              <i
-                class="fa fa-certificate fa-fw xxlarge teal-color"
-              ></i
-              >Education
-            </h2>
-            <div class="container">
-              <h5 class="text-black"><b>University of Toronto | Computer Engineering</b></h5>
-              <h6 class="text-black">
-                <i class="fa fa-calendar"></i> <i> September 2020 - April 2025</i>
-                <li><b>Bachelor Of Applied Science</b></li>
-                <li><b>3.84/4.00 cGPA</b></li>
-                <li>Artificial Intelligence Minor</li>
-                <li>Business Certificate</li>
-              </h6>
-            </div>
-          </div>
-
-          <div class="container card white margin-bottom">
-            <h2 class="text-black">
-              <i
-                class="fa fa-suitcase w3-margin-right xxlarge teal-color"
-              ></i> Work Experience
-            </h2>
-            <div class="container">
-              <h5 class="text-black">
-                <b>Front End Developer</b> | UoftHacks
-              </h5>
-              <h6 class="text-teal">
-                <h6 class="text-black">
-                  <i class="fa fa-calendar margin-right"></i>July 2022
-                  - <b>Current</b>
-                </h6>
-                <!--
-                  change this to your own later<span class="w3-tag w3-black w3-round-xlarge">Current</span>-->
-              </h6>
-              <p><li>Developing the frontend of the hackathon website</li></p>
-            </div>
-
-            <div class="container">
-              <h5 class="text-black">
-                <strong> Machine Learning Researcher </strong> | iQua Research
-                Group
-              </h5>
-              <h6 class="text-black">
-                <i class="fa fa-calendar margin-right"></i>May 2022 -
-                <b>Current</b>
-              </h6>
-              <p>
-                <li>
-                  Conducted experiments using reinforcement learning algorithms
-                  such as TD3 for machine learning models
-                </li>
-                <li>
-                  Explored design space for when models should forget old data
-                  based on interference
-                </li>
-                <li>
-                  Implemented reinforcement learning for clients in the
-                  federated learning framework <i><b>Plato</b></i>
-                  <br>
-                  <a href=https://github.com/TL-System/plato/tree/continual_RL> <i>Project Link</i></a>
-                </li>
-              </p>
-            </div>
-            
-          </div>
-
-          <div class="container card white margin-bottom" >
-            <h2 class="text-black less-thin-underline">
-              <i class="fa fa-calendar" style=color:#03b7b7></i>
-              &nbsp; Some things I've worked on
-            </h2>
-
-            <h3>
-              <b style="color:#094ae2"> Extension of Federated Learning Framework <a href=https://github.com/TL-System/plato/tree/continual_RL> Plato</a></b>
-              <br>
-              <i class="fa fa-calendar fa-fw margin-top large"></i> <span style="font-size:70%">May 2022 -
-                <b>Current</b></span>
-              
-              <p style="font-size:65%">I helped extend this framework by supporting reinforcement learning training on clients. I worked on
-              two reinforcement learning algorithms (<a href="https://github.com/TL-System/plato/tree/continual_RL/examples/park_env" ><b>A2C</b></a> & <a href="https://github.com/TL-System/plato/tree/continual_RL/examples/td3_learning" ><b>TD3</b></a> ) 
-              for clients to use and then used federated averaging to aggregate the clients
-              to the server. I also helped make custom actor and critic models used in both A2C & TD3 as well as a custom algorithm for the server to
-              communication with the clients</p>
-              <p style="font-size:65%">Curriculum learning was then implemented with these algorithms and then experiments were ran on the adaptive bit rate environment found in  <a href=https://github.com/park-project/park> park</a>
-              with three tasks and three seeds. I then developed code to combine dataframes, take the averages and cumulative sum and ploted them. 
-              Comparing curriculum learning showed better results than the classic federated averaging algorithm</p>
-
-              <p style="font-size: 65%"><b>This work resulted in a paper submitted to the INFOCOM 2023 Conference</b></p>
-            </h3>
-            <hr>
-
-            <h3>
-              <b style="color:#094ae2"> Mapping Application similar to Google Maps</b>
-              <br>
-              <i class="fa fa-calendar fa-fw w3-margin-top w3-large"></i> <span style="font-size:70%">Jan 2022 -
-                Apr 2022</span>
-              <br>
-            </h3>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/5GGsZbrTWwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <li style="font-size:large">A more detailed reflection can be found  <a href=https://github.com/danielliucs/MapperPublic> here</a> </li>
-
-            <hr>
-
-            <h3>
-              <b style="color:#094ae2"> Processor Design Project</b>
-              <br>
-              <i class="fa fa-calendar fa-fw w3-margin-top w3-large"></i> <span style="font-size:70%">Apr 2022</span>
-              <p style="font-size: 65%"> This was a project I worked on with a good friend of mine Dante Crescenzi (insert his website here)
-              This processor was 16 bits with 8 total registers and implemented using Verilog. I implemented assembly language instructions such as
-              <b>mov, movt, add, sub, ldr, str, and, b</b> and things such as flag checking. 
-              Dante then extended the processor to support instructions such as <b>push, pop, bl, cmp, lsl, lsr, asr, ror</b>.
-              </p>
-              <p style="font-size: 65%">Overall, this project taught me a lot about how a processor works and the verilog behind it. Concepts such as
-              FSM timing diagrams were used to implement instructions on the correct clock cycle along with ModelSim debugging were extensively practiced.
-              <br>
-              Due to the restrictions of academic integrity set in place by my Univeristy, I am unable to share the project folder publicly on this website but they 
-              are availaible upon demand.
+            <p class="text-black">
+              <a href=https://www.linkedin.com/in/daniel-liu-1544321ab /> <i
+                class="fa-brands fa-linkedin large social-icon"></i> </a>
             </p>
-            </h3>
 
-            <hr>
-            <h3>
-              <b style="color:#094ae2"> <a href="https://devpost.com/software/gotime-jbksxl">GoTime</a> - NewHacks Hackathon Project, <i>4th Place Winner</i></b>
-              <br>
-              <i class="fa fa-calendar fa-fw w3-margin-top w3-large"></i> <span style="font-size:70%">November 7th 2021</span>
+            <p class="text-black">
+              <i class="fa fa-envelope large text-teal"></i>daniell.liu@mail.utoronto.ca
+            </p>
 
-              <p style="font-size:65%">This was a 24 hour Hackathon. It's where I first learned about Dijkstras algorithm and how it finds us the shortest
-                possible path inside a graph. I mainly worked on the algorithm and it was then integrated with the frontend to launch 
-                a web app.The main goal of this web app was to allow University of Toronto students to have a more <i><b>efficient schedule</b></i> than what is 
-                currently in place. 
-               
-              </p>
-              <p style="font-size:65%">
-                Currently, an example for students with three lectures will have
-                students sometimes start at Bahen, walk up to Sidney Smith, and walk back to Bahen. 
-                Making students have two classes in Bahen and then their third and last one at Sidney Smith would be more efficient.
-                This is what our web app aimed to do, minimize walking by rearranging schedules more efficiently. More details can be found
-                at the projects link.
-              </p>
+            <p class="text-black">
+              <i class="fa-solid fa-house large text-teal"></i>Mississauga, Canada
+            </p>
 
-              <p style="font-size:65%">
-                Overall, the hackathon was lots of work as I was just at my computer for almost 24 hours
-                but I learned a lot and it was fun.
-              </p>
-            </h3>
           </div>
-          <!-- End Right Column -->
         </div>
-        <!-- End Grid -->
+        <!-- End Left Column -->
       </div>
+      <!-- Right Column -->
+      <div class="right-column">
 
-      <!-- End Page Container -->
+        <div class="container card margin-bottom white">
+          <h2 class="text-black">
+            <i class="far fa-hand-peace xxlarge fa-fw teal-color"></i>Hi I'm Daniel
+          </h2>
+          <p>
+            talk about yourself here tomorrow
+          </p>
+        </div>
+        <div class="container card white margin-bottom">
+          <h2 class="text-black">
+            <i class="fa fa-certificate fa-fw xxlarge teal-color"></i>Education
+          </h2>
+          <div class="container">
+            <h5 class="text-black"><b>University of Toronto | Computer Engineering</b></h5>
+            <h6 class="text-black">
+              <i class="fa fa-calendar"></i> <i> September 2020 - April 2025</i>
+              <li><b>Bachelor Of Applied Science</b></li>
+              <li><b>3.84/4.00 cGPA</b></li>
+              <li>Artificial Intelligence Minor</li>
+              <li>Business Certificate</li>
+            </h6>
+          </div>
+        </div>
+
+        <div class="container card white margin-bottom">
+          <h2 class="text-black">
+            <i class="fa fa-edit fa-fw xxlarge teal-color"></i>
+            Coming Updates to this Website
+          </h2>
+          <ul>
+            <li style="font-size:30px"> Make different tabs for different things </li>
+            <li> Personal Calender </li>
+            <li> &nbsp; &nbsp; &nbsp; ... A calender that tracks tasks I have to do per
+              week, one I can enter tasks/things to do, this would require a database.. would probably be time
+              consuming, to be determined </li>
+            <li>Maybe a section of the website dedicated to talk about courses i've taken and what i've thought about
+              them</li>
+            <li>A portfolio, similar to what is seen on github </li>
+            <li> &nbsp; &nbsp; &nbsp; ... This will keep track of projects I have worked on
+              with source code and maybe demos of it working? </li>
+            <li> An about me section </li>
+            <li> &nbsp; &nbsp; &nbsp; ... This will probably be about me and stuff &nbsp; </li>
+            <li>&nbsp; &nbsp; &nbsp ... Maybe add what I'm currently doing and what I want to do
+              in the future</li>
+            <li>An integration of react maybe after I integrate javascript and more css</li>
+          </ul>
+        </div>
+        <!-- End Right Column -->
+      </div>
+      <!-- End Grid -->
     </div>
-    <br>
-    <footer class="footer">
-      &lt; &lt; &lt; &copy; Daniel Liu &gt; &gt; &gt;
-    </footer>
 
-  </body>
+    <!-- End Page Container -->
+  </div>
+  <br>
+  <footer class="footer">
+    &lt; &lt; &lt; &copy; Daniel Liu &gt; &gt; &gt;
+  </footer>
+
+</body>
+
 </html>

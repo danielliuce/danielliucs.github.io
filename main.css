@@ -8,6 +8,41 @@ body{
    font-family:"Open Sans", sans-serif;
    line-height: 1.5;
 }
+
+nav{
+    width: 100%;
+    height: 65px;
+    background-color:#000000 !important;
+}
+nav p{
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    float:left;
+    padding: 0px 20px;
+}
+nav ul{
+    float: left
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a {
+    display: block; 
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+    font-size: 14px;
+    padding:12px 7px;
+    text-decoration: none;
+}
+nav ul li ul {
+    display: block;
+    position: absolute;
+}
+
 h1{
     font-size:36px;
     font-weight:400;
@@ -117,10 +152,10 @@ hr{
 }
 .text-teal{
     margin-right: 1.5%; 
-    color:#03b7b7!important
+    color:#17C3B2!important
 }
 .teal-color{
-    color:#03b7b7!important
+    color:#17C3B2!important
 }
 .small{
     font-size:12px !important;
@@ -139,7 +174,7 @@ hr{
 }
 .social-icon{
     margin-right: 0.4%; 
-    color:#03b7b7!important
+    color:#17C3B2!important
 }
 .display-container{
     position: relative;
@@ -165,7 +200,54 @@ hr{
     right:0;
     bottom:0;
     width:100%;
-    background-color:#03b7b7;
+    background-color:#17C3B2;
     color: white;
     text-align: center !important;
+}
+.footer-other{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    background-color:#17C3B2;
+    color: white;
+    text-align: center !important;
+}
+/* From uiverse.io by @nikk7007 */
+button {
+ padding: 0.8em 1.8em;
+ border: 2px solid #17C3B2;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 10px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #17C3B2;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #17C3B2;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 105%;
+}
+
+button:hover {
+ color: #111;
 }
