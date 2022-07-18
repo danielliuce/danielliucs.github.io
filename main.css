@@ -91,6 +91,9 @@ hr{
     margin-right:auto;
     margin-top: 16px !important;
     max-width: 2000px;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
 }
 .container{
     padding:0.01em 16px;
@@ -110,11 +113,11 @@ hr{
 }
 .left-column{
     float:left;
-    width:25%;
+    width:20%;
 }
 .right-column{
     float:right;
-    width:75%;
+    width:80%;
 }
 .content{
     margin-left:auto;
