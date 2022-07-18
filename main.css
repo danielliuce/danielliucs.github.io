@@ -157,6 +157,9 @@ hr{
 .teal-color{
     color:#17C3B2!important
 }
+.nice-blue{
+    color:#094ae2!important
+}
 .small{
     font-size:12px !important;
 }
@@ -196,6 +199,7 @@ hr{
     transition: 0.3s;
 }
 .footer{
+    position:fixed;
     left:0;
     right:0;
     bottom:0;
@@ -204,17 +208,6 @@ hr{
     color: white;
     text-align: center !important;
 }
-.footer-other{
-    position: fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    background-color:#17C3B2;
-    color: white;
-    text-align: center !important;
-}
-/* From uiverse.io by @nikk7007 */
 button {
  padding: 0.8em 1.8em;
  border: 2px solid #17C3B2;
