@@ -10,8 +10,10 @@ function changePage(id)
     }else if (id == "Experience")
     {
         location.replace("experience.html")
-    }else{
+    }else if(id=="Projects"){
         location.replace("projects.html")
+    }else{
+        location.replace("resume.pdf")
     }
     
 }
