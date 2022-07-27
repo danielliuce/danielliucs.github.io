@@ -40,7 +40,7 @@
     <!-- Page Container -->
     <div class="page">
         <!-- The Grid -->
-        <div class="row-padding xlarge">
+        <div class="row-padding medium">
             <h1>A MORE DETAILED explaination will be provided soon of all the things ive done here</h1>
 
             <h2 class="text-black">
@@ -48,17 +48,30 @@
             </h2>
             <div class="container">
                 <h3 class="text-black">
-                    <b>Frontend Engineer</b> | UoftHacks
+                    <strong>Frontend Engineer</strong> | UoftHacks
                 </h3>
 
-                <h4 class="text-black large">
+                <h4 class="text-black">
                     <i class="fa-solid fa-calendar-days margin-right"></i>July 2022
                     - <b>Current</b>
                 </h4>
-               
-                <p>
-                    <li>Developing the frontend of the hackathon website</li>
-                </p>
+                <h5>
+                    <b><u>July:</u></b>
+                    <p>
+                        This month was an onboarding month that was mainly for the team to get to know one another.
+                        We were assigned our projects this month and I would be working on maintaining and extending the 
+                        website of the hackathon.
+                    </p>
+                    
+                </h5>
+                <h5>
+                    <b><u>August:</u></b>
+                    <p>
+                        This month is probably when I will start to learn React and Node.js which is primarily what the the hackathon's website uses.
+                    </p>
+                    
+                </h5>
+                <hr>
             </div>
 
             <div class="container">
@@ -70,28 +83,69 @@
                     <i class="fa-solid fa-calendar-days margin-right"></i>May 2022 -
                     <b>Current</b>
                 </h4>
-                <p>
-                    <li>
-                        Conducted experiments using reinforcement learning algorithms
-                        such as TD3 for machine learning models
-                    </li>
-                    <li>
-                        Explored design space for when models should forget old data
-                        based on interference
-                    </li>
-                    <li>
-                        Implemented reinforcement learning for clients in the
-                        federated learning framework <i><b>Plato</b></i>
-                    </li>
-                    <li>
-                        Combined and plotted dataframes with their average & cumulative rewards 
-                    </li>
-                    <a href=https://github.com/TL-System/plato/tree/continual_RL> <i>Project Link</i></a>
-                </p>
+                <h5>
+                    <b><u>May:</u></b>
+                    <p>
+                        I started off this internship without any knowledge in Python, Machine Learning, or Federated Learning.
+                        I quickly learned Python and the basic concepts of federated learning within my first two days of the internship.
+                    </p>
+                    <p>
+                        For the next <strong>two weeks</strong>, I took a deeper dive into learning the concepts of reinforcement learning from the book: <i>Deep Reinforcement Learning Hands-on</i>
+                        by Maxim Lapan. I studied only select chapters related to what would be present during this internship. Specifically chapters 1->7, 9->11.
+                        The hands on code that I wrote for each chapter from the book can be found on my public repositories on my github.
+                      
+                    </p>
+                    <p>
+                        The third week was when I started running experiments for a paper that was worked on before I arrived for this internship.
+                        I also edited existing plots for previous experiments in this paper as well as write code to find the average reward at every
+                        10k timestep of these experiments. This paper propsed an algorithm <i>Lethe</i> that was for continual reinforcement learning which
+                        aimed to forget previous tasks that interfered with the current task so that agents can adapt and converge quicker
+                        to newer tasks. It used a prioritized replay buffer based on an interference metric that encourages the agent to focus on
+                        samples from the new task when the gradients of previous tasks conflict with the new one.
+                    </p>
+                    <p>
+                        After Lethe was submitted, the fourth week was when I started to work on extending the federated learning framework <i><a href="https://github.com/TL-System/plato">Plato</a></i>
+                    </p>
+                </h5>   
+                <hr>
+                <h5>
+                    <b><u>June:</u></b>
+                    <p>
+                        This entire month was mainly dedicated to extending the framework Plato as this took many hours of debuggging
+                        since it was a distributed system framework. Not only was the task to merely extend Plato, we also had to implement
+                        our own ideas into the extension for another paper <b><i>(Shoal)</i></b> submission. More details about this project can be found
+                        <a href="projects.html">here</a>
+                        <br>
+                        <a href=https://github.com/TL-System/plato/tree/continual_RL> <i>Project Link</i></a>
+                    </p>
+                </h5>
+                <hr>
+                <h5>
+                    <b><u>July:</u></b>
+                    <p>
+                        This month was when I started to help with experiments to test out the performance of our idea with curriculum federated reinforcement learning.
+                        There were so many experiments ran across different seeds that I lost count but if I had to take a guess I think there were around 100
+                        different experiments conducted to compare perfomrance between already exisitng federated learning algorithms and ours.
+                    </p>
+                    <p>
+                        I also wrote extendible code to combine an arbitrary number of dataframes from the different experiments, calculate their average cumulative sum rewards across seeds as well
+                        as just their average rewards across seeds. This code also plotted these combined dataframes to get a better visual on the performance between different 
+                        algorithms. 
+
+                    </p>
+                    <p>
+                        The end of this month is also the deadline to the <strong>INFOCOM 2023 Conference</strong> which is the 
+                        conference where Shoal would be submitted.
+                    </p>
+                </h5>
+                <hr>
+                <h5>
+                    <b><u>August:</u></b>
+                    TBD!
+                    <hr>
+                </h5>
+
             </div>
-
-
-
             <!-- End Grid -->
         </div>
 
